@@ -7,39 +7,39 @@ const HeroSection = () => {
   
   const slides = [
     {
-      image: 'https://cfptjhjukjbqxewmgwxp.supabase.co/storage/v1/object/public/AjooniAndJasleen/HeroSlideNew/v17ty2th19dacmpndjrt.webp',
+      image: 'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/HeroSlide/v17ty2th19dacmpndjrt_copy_4096x2729.webp',
       title: 'Architectural Project'
     },
     {
-      image: 'https://cfptjhjukjbqxewmgwxp.supabase.co/storage/v1/object/public/AjooniAndJasleen/HeroSlideNew/z6kn33y6lpc3acfesoyu.webp',
+      image: 'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/HeroSlide/z6kn33y6lpc3acfesoyu_copy_4096x2729.webp',
       title: 'Architectural Project'
     },
     {
-      image: 'https://cfptjhjukjbqxewmgwxp.supabase.co/storage/v1/object/public/AjooniAndJasleen/HeroSlideNew/i8cadrw3zpiqh1mq6wic.webp',
+      image: 'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/HeroSlide/i8cadrw3zpiqh1mq6wic_copy_1920x1456.webp',
       title: 'Architectural Project'
     },
     {
-      image: 'https://cfptjhjukjbqxewmgwxp.supabase.co/storage/v1/object/public/AjooniAndJasleen/HeroSlideNew/sr2puuebfrahd0ebtsql.webp',
+      image: 'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/HeroSlide/sr2puuebfrahd0ebtsql_copy_1918x1920.webp',
       title: 'Architectural Project'
     },
     {
-      image: 'https://cfptjhjukjbqxewmgwxp.supabase.co/storage/v1/object/public/AjooniAndJasleen/Hero%20Slide/WhatsApp%20Image%202024-09-10%20at%2015.52.09.webp',
+      image: 'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/HeroSlide/WhatsAppImage2024-09-10at15.52.09_copy_1039x1080.webp',
       title: 'Architectural Project'
     },
     {
-      image: 'https://cfptjhjukjbqxewmgwxp.supabase.co/storage/v1/object/public/AjooniAndJasleen/HeroSlideNew/ekbt7zhzpz1r9atnorg7.webp',
+      image: 'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/HeroSlide/ekbt7zhzpz1r9atnorg7_copy_3595x2400.webp',
       title: 'Architectural Project'
     },
     {
-      image: 'https://cfptjhjukjbqxewmgwxp.supabase.co/storage/v1/object/public/AjooniAndJasleen/HeroSlideNew/h8s8pfxeqwxguia7wy0n.webp',
+      image: 'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/HeroSlide/h8s8pfxeqwxguia7wy0n_copy_1602x2400.webp',
       title: 'Architectural Project'
     },
     {
-      image: 'https://cfptjhjukjbqxewmgwxp.supabase.co/storage/v1/object/public/AjooniAndJasleen/HeroSlideNew/muquwyho6np7csdtvwvu.webp',
+      image: 'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/HeroSlide/muquwyho6np7csdtvwvu_copy_4096x2729.webp',
       title: 'Architectural Project'
     },
     {
-      image: 'https://cfptjhjukjbqxewmgwxp.supabase.co/storage/v1/object/public/AjooniAndJasleen/HeroSlideNew/koxdytbkmz6aohxunesm.webp',
+      image: 'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/HeroSlide/koxdytbkmz6aohxunesm_copy_4096x2729.webp',
       title: 'Architectural Project'
     }
   ];

@@ -1,0 +1,88 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import LazyImage from '../components/LazyImage';
+import BackToHomeButton from '../components/BackToHomeButton';
+
+const KasauliCottagePage = () => {
+  const images = [
+    'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/Projects/Kasauli%20cottage/IMG-20240517-WA0007.jpg',
+    'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/Projects/Kasauli%20cottage/IMG-20240517-WA0016.jpg',
+    'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/Projects/Kasauli%20cottage/IMG-20240522-WA0030.jpg',
+    'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/Projects/Kasauli%20cottage/IMG-20240522-WA0031.jpg',
+    'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/Projects/Kasauli%20cottage/IMG-20240522-WA0032.jpg',
+    'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/Projects/Kasauli%20cottage/IMG-20240522-WA0033.jpg',
+    'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/Projects/Kasauli%20cottage/IMG-20240522-WA0034.jpg',
+    'https://cdn.jsdelivr.net/gh/abhinavnosnitch/aj-website-assets/Website%20assets/Projects/Kasauli%20cottage/WhatsApp%20Image%202024-09-10%20at%2015.52.09.jpeg'
+  ];
+
+  return (
+    <div className="min-h-screen bg-luxury-ivory overflow-x-hidden w-full">
+      <BackToHomeButton />
+
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <h1 className="font-cormorant text-5xl sm:text-6xl lg:text-7xl font-bold text-luxury-charcoal mb-4">
+              Kasauli Cottage
+            </h1>
+            <p className="font-cormorant text-2xl sm:text-3xl text-luxury-charcoal/70 italic font-light">
+              Kasauli
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            {images.map((image, index) => (
+              <motion.div
+                key={index}
+                className="group relative overflow-hidden rounded-lg shadow-lg break-inside-avoid mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: index * 0.05
+                }}
+              >
+                <div className="relative w-full">
+                  <LazyImage
+                    src={image}
+                    alt={`Kasauli Cottage - Image ${index + 1}`}
+                    maintainAspectRatio={true}
+                    objectFit="contain"
+                  />
+                  <div className="absolute inset-0 bg-luxury-charcoal/0 group-hover:bg-luxury-charcoal/10 transition-all duration-500 ease-out" />
+                  <div className="absolute inset-0 border-2 border-luxury-gold/0 group-hover:border-luxury-gold/40 transition-all duration-500 ease-out m-4 rounded-lg" />
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.div
+            className="mt-20 text-center max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <p className="font-cormorant text-xl sm:text-2xl text-luxury-charcoal/80 italic leading-relaxed">
+              A hillside haven where cozy interiors and panoramic views create the perfect balance of comfort and connection.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default KasauliCottagePage;
